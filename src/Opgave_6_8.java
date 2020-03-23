@@ -3,17 +3,15 @@ import javax.crypto.spec.PSource;
 public class Opgave_6_8 {
     public static void main(String[] args) {
 
-        final int END = 10;
-        final int SQRMETER_START = 30;
 
         System.out.printf("%-9s%15s", "Miles", "Kilometers");
         System.out.print("\t|\t");
         System.out.printf("%-9s%15s\n", "Kilometers", "Miles");
 
-        for (int p = 1, s = 20; p <= END; p += 1, s += 5) {
-            System.out.printf("%-9d%15.3f", p, mileToKilometer(p));
+        for (int i = 1, j = 20; i <= 10; i += 1, j += 5) {
+            System.out.printf("%-9d%15.3f", i, mileToKilometer(i));
             System.out.print("\t|\t");
-            System.out.printf("%-9d%15.3f\n", s, kilometerToMile(s));
+            System.out.printf("%-9d%15.3f\n", j, kilometerToMile(j));
         }
     }
 
